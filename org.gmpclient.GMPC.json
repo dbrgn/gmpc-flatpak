@@ -1,0 +1,23 @@
+{
+    "app-id": "org.gmpclient.GMPC",
+    "runtime": "org.freedesktop.Platform",
+    "runtime-version": "19.08",
+    "sdk": "org.freedesktop.Sdk",
+    "command": "gmpc",
+    "modules": [
+        "shared-modules/intltool/intltool-0.51.json",
+        {
+            "name": "gmpc",
+            "buildsystem": "autotools",
+            "config-opts": [
+                "--enable-libnotify"
+            ],
+            "sources": [
+                {
+                    "type": "git",
+                    "url": "https://github.com/DaveDavenport/gmpc"
+                }
+            ]
+        }
+    ]
+}
